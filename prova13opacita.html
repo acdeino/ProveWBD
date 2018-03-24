@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+      #container
+    {
+      position: relative;
+      width: 300px;
+      height: 300px;
+    }
+    img{
+      width: 300px;
+      height:300px;
+      position: absolute;
+      opacity: 0.4;
+      }
+      #container:hover img
+      {
+        opacity: 0.8;
+      }
+      #container:hover p
+      {
+        color: red;
+      }
+
+      #container:hover
+      {
+        box-shadow: 20px 20px 10px 2px #333;
+        // for browser compatibility, add //
+        -webkit-box-shadow:20px 20px 10px #333;
+        -moz-box-shadow: 20px 20px 10px #333;
+
+      }
+      p
+      {
+        color: white;
+        position: relative;
+        text-align: center;
+        line-height: 150px;
+        width: 250px;
+        height: 50px;
+        font-size: 50px;
+      }
+
+      .innershadow
+      {
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+      }
+
+      .innershadow:hover
+      {
+        box-shadow: 20px 20px 10px 2px #333 inset;
+        /* for browser compatibility, add
+        -webkit-box-shadow:20px 20px 10px #333;
+        -moz-box-shadow: 20px 20px 10px #333; */
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div id="container">
+      <img src="http://mangiarebuono.it/wp-content/uploads/2015/07/colline-marchigiane.jpg">
+      <p>Stupido Kwatto</p>
+    </div>
+    <br>
+    <div class="innershadow">
+
+    </div>
+
+  </body>
+</html>

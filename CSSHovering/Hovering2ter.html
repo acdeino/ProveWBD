@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> </title>
+    <style type="text/css">
+    .element{
+    float: left;
+    width: 400px;
+    height: 400px;
+    //background-color: #333;
+    color: #fff;
+    position: relative;
+    }
+
+/** First rotating element of the lot **/
+    .front , .back {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      transition:all 0.5s ease;
+    }
+
+    .front {
+    transform: rotateX(0deg);
+    }
+
+    .back{
+      transform: rotateX(180deg);
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+    }
+
+    .element:hover .front{
+      transform:rotateX(180deg);
+    }
+
+    .element:hover .back {
+      transform: rotateX(0deg);
+    }
+
+    .element .front img {
+      width: 100%;
+      height: 100%;
+    }
+
+/* Second rotating element of the lot */
+
+    .front2 , .back2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        transition:all 1s ease;
+      }
+
+      .front2 {
+      transform: rotateY(0deg);
+      }
+
+      .back2{
+        transform: rotateY(180deg);
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        font-family: Helvetica;
+        font-style: italic;
+        font-size: bold;
+      }
+
+      .element:hover .front2{
+        transform:rotateY(180deg);
+      }
+
+      .element:hover .back2 {
+        transform: rotateY(0deg);
+      }
+
+      .element .front2 img {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    /*Third rotating effect of the lot*/
+    .front3 , .back3 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        transition:all 1.5s ease;
+      }
+
+      .front3 {
+      transform: rotateZ(0deg);
+      }
+
+      .back3{
+        transform: rotateZ(180deg);
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        font-family: serif;
+        font-style: italic;
+        font-weight: bolder;
+      }
+
+      .element:hover .front3{
+        transform:rotateZ(180deg);
+      }
+
+      .element:hover .back3 {
+        transform: rotateZ(0deg);
+      }
+
+      .element .front3 img {
+        width: 100%;
+        height: 100%;
+
+    }
+    </style>
+  </head>
+  <body>
+    <div class="element">
+    <div class="front">
+      <img src="img/1.jpg">
+    </div>
+    <div class="back">
+    <div class="back-content">
+      <h2>Galaxy Description</h2>
+      <p>This is a random Galaxy</p>
+    </div>
+    </div>
+
+    </div>
+
+    <div class="element">
+    <div class="front2">
+      <img src="img/11.jpg">
+    </div>
+    <div class="back2">
+    <div class="back-content">
+      <h2>Second Hover Effect</h2>
+      <p>This is a random winter road.</p>
+    </div>
+    </div>
+
+    </div>
+
+    <div class="element">
+    <div class="front3">
+      <img src="img/12.jpg">
+    </div>
+    <div class="back3">
+    <div class="back-content">
+      <h2>Third Hover Effect</h2>
+      <p>This is a random neigborhood during autumn.</p>
+    </div>
+    </div>
+
+    </div>
+  </body>
+</html>

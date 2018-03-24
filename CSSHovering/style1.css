@@ -1,0 +1,247 @@
+
+.element{
+float: left;
+width: 400px;
+height: 400px;
+//background-color: #333;
+color: #fff;
+position: relative;
+border: 20px solid transparent;
+}
+
+/** First rotating element of the lot **/
+.front , .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transition:all 0.5s ease;
+}
+
+.front {
+transform: rotateX(0deg);
+}
+
+.back{
+  transform: rotateX(180deg);
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+.element:hover .front{
+  transform:rotateX(180deg);
+}
+
+.element:hover .back {
+  transform: rotateX(0deg);
+}
+
+.element .front img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Second rotating element of the lot */
+
+.front2 , .back2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition:all 1s ease;
+  }
+
+  .front2 {
+  transform: rotateY(0deg);
+  }
+
+  .back2{
+    transform: rotateY(180deg);
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    font-family: Helvetica;
+    font-style: italic;
+    font-size: bold;
+  }
+
+  .element:hover .front2{
+    transform:rotateY(180deg);
+  }
+
+  .element:hover .back2 {
+    transform: rotateY(0deg);
+  }
+
+  .element .front2 img {
+    width: 100%;
+    height: 100%;
+
+}
+
+/*Third rotating effect of the lot*/
+.front3 , .back3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition:all 1.5s ease;
+  }
+
+  .front3 img
+  {
+    width: 100%;
+    height: 100%;
+  }
+
+  .back3{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    font-family: serif;
+    font-style: italic;
+    font-weight: bolder;
+    top: -100%;
+  }
+
+  .effect3
+  {
+    overflow: hidden;
+    transition:all 2.0s ease;
+  }
+
+  .effect3:hover .back3
+  {
+    top: 0;
+  }
+
+  .effect3:hover
+  {
+    transform:scale(0.5);
+    border-radius: 35%; /*set 50% to have a circle*/
+    border: 20px solid #FF6600;
+  }
+
+  .effect3:hover .back-content
+  {
+    transform: scale(2);
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 20%;
+  }
+
+/* Fourth rotating element of the lot*/
+.front4 , .back4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*backface-visibility: hidden;*/
+    transition:all 1.5s ease;
+  }
+
+  .front4
+  {
+    z-index: 3;
+  }
+
+  .front4 img
+  {
+    width: 100%;
+    height: 100%;
+  }
+
+  .back4{
+    background-color:#333;
+    color: #fff;
+    text-align: center;
+    font-family: times;
+    font-style: italic;
+    font-weight: bolder;
+    top: 0%;
+    z-index: 1.5;
+  }
+
+  .effect4
+  {
+    overflow: hidden;
+    transition:all 2.0s ease;
+  }
+
+  .effect4:hover .front4
+  {
+    transform: rotateY(180deg);
+    transform-origin: left;
+  }
+
+  .effect4:hover .back4
+  {
+    top: 0;
+  }
+
+  .effect4:hover
+  {
+    transform:scale(0.5);
+    border-radius: 35%; /*set 50% to have a circle*/
+    border: 20px solid red;
+  }
+
+  .effect4:hover .back-content
+  {
+    transform: scale(2);
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 20%;
+  }
+
+/*Fifth hovering element of the lot*/
+  .front5 , .back5 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      /*backface-visibility: hidden;*/
+      transition:all 1.5s ease-in-out;
+    }
+
+    .front5 img
+    {
+      width: 100%;
+      height: 100%;
+    }
+
+    .back5{
+      background-color:#9b59b6;
+      color: #fff;
+      text-align: center;
+      font-family: times;
+      font-style: italic;
+      font-weight: bolder;
+      top: 0%;
+      transform: rotateX(90deg);
+      transform-origin: top;
+    }
+
+    .effect5
+    {
+      overflow: hidden;
+      transition:all 2.0s ease;
+    }
+
+    .effect5:hover .back5
+    {
+      transform: rotateX(0deg);
+    }
+
+
+
+  /*Sixth hovering element of the lot*/
