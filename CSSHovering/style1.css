@@ -245,3 +245,42 @@ transform: rotateX(0deg);
 
 
   /*Sixth hovering element of the lot*/
+
+  .front6 , .back6 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      /*backface-visibility: hidden;*/
+      transition:all 1.5s ease-in-out;
+    }
+
+    .front6 img
+    {
+      width: 100%;
+      height: 100%;
+    }
+
+    .back6{
+      background-color:#42f49e;
+      color: #fff;
+      text-align: center;
+      font-family: times;
+      font-style: italic;
+      font-weight: bolder;
+      top: 0%;
+      transform: rotateX(90deg);
+      transform-origin: top;
+    }
+
+    .effect6
+    {
+      overflow: hidden;
+      transition:all 2.0s ease;
+    }
+
+    .effect6:hover .back6
+    {
+      transform: rotateX(0deg);
+    }
