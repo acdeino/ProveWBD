@@ -124,7 +124,7 @@ transform: rotateX(0deg);
 
   .effect3:hover
   {
-    transform:scale(0.5);
+    transform:scale(0.5)rotateZ(360deg);
     border-radius: 35%; /*set 50% to have a circle*/
     border: 20px solid #FF6600;
   }
