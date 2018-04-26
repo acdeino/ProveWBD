@@ -245,6 +245,10 @@ transform: rotateX(0deg);
 
 
   /*Sixth hovering element of the lot*/
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8f6f120731a7d057551e1d15c9ec0e0f5a83ce4a
   .front6 , .back6 {
       position: absolute;
       top: 0;
@@ -262,7 +266,11 @@ transform: rotateX(0deg);
     }
 
     .back6{
+<<<<<<< HEAD
       background-color:#9b59b6;
+=======
+      background-color:#42f49e;
+>>>>>>> 8f6f120731a7d057551e1d15c9ec0e0f5a83ce4a
       color: #fff;
       text-align: center;
       font-family: times;
@@ -279,7 +287,11 @@ transform: rotateX(0deg);
       transition:all 2.0s ease;
     }
 
+<<<<<<< HEAD
     .effect6:hover
+=======
+    .effect6:hover .back6
+>>>>>>> 8f6f120731a7d057551e1d15c9ec0e0f5a83ce4a
     {
       transform: rotateX(0deg);
     }
