@@ -246,6 +246,10 @@ transform: rotateX(0deg);
 
   /*Sixth hovering element of the lot*/
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8f6f120731a7d057551e1d15c9ec0e0f5a83ce4a
 =======
 
 >>>>>>> 8f6f120731a7d057551e1d15c9ec0e0f5a83ce4a
@@ -267,7 +271,11 @@ transform: rotateX(0deg);
 
     .back6{
 <<<<<<< HEAD
+<<<<<<< HEAD
       background-color:#9b59b6;
+=======
+      background-color:#42f49e;
+>>>>>>> 8f6f120731a7d057551e1d15c9ec0e0f5a83ce4a
 =======
       background-color:#42f49e;
 >>>>>>> 8f6f120731a7d057551e1d15c9ec0e0f5a83ce4a
@@ -288,7 +296,11 @@ transform: rotateX(0deg);
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     .effect6:hover
+=======
+    .effect6:hover .back6
+>>>>>>> 8f6f120731a7d057551e1d15c9ec0e0f5a83ce4a
 =======
     .effect6:hover .back6
 >>>>>>> 8f6f120731a7d057551e1d15c9ec0e0f5a83ce4a
